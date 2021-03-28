@@ -101,6 +101,7 @@ ul li a {
 }
 
 @media screen and (max-width: 900px) {
+  /* Padding promjena */
   #hero {
     padding: 0 25px !important;
   }
@@ -112,6 +113,7 @@ ul li a {
   }
   #navigation {
     padding: 0 25px !important;
+    /* Promjena položaja navigacije */
   }
   #navigation .nav-list {
     visibility: hidden;
@@ -164,6 +166,7 @@ ul li a {
 }
 
 @media screen and (max-width: 500px) {
+  /* Padding promjena */
   #hero {
     padding: 0 20px !important;
   }
