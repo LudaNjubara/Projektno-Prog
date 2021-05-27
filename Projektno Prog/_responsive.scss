@@ -1,0 +1,79 @@
+@media screen and (max-width: 900px) {
+  /* Padding promjena */
+  #hero {
+    padding: 0 $md-padding !important;
+  }
+  .about-member {
+    padding: 0 $md-padding !important;
+  }
+  footer {
+    padding: 180px $md-padding 30px $md-padding !important;
+  }
+  #navigation {
+    padding: 0 $md-padding !important;
+
+    /* Promjena položaja navigacije */
+    .nav-list {
+      visibility: hidden;
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.6s ease ease-in-out;
+
+      li {
+        margin: 30px 0px;
+
+        a {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .nav-list.opened {
+      visibility: visible;
+      pointer-events: all;
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.8);
+      transition: all 0.6s ease-in-out;
+    }
+
+    .menuToggle {
+      display: grid !important;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .scrollToTopBx {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  #all-members-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Padding promjena */
+  #hero {
+    padding: 0 $sm-padding !important;
+  }
+  .about-member {
+    padding: 0 $sm-padding !important;
+  }
+  footer {
+    padding: 180px $sm-padding 30px $sm-padding !important;
+  }
+  #navigation {
+    padding: 0 $sm-padding !important;
+  }
+}
